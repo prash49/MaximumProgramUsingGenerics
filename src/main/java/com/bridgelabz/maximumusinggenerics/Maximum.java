@@ -4,19 +4,19 @@ package com.bridgelabz.maximumusinggenerics;
  * Hello world!
  */
 public class Maximum {
-    public static Float getMaximum(Float num1, Float num2, Float num3) {
-        Float max = num1;
-        if (num2 > num1 && num2 > num3) {
-            max = num2;
-        } else if (num3 > num1 && num3 > num2) {
-            max = num3;
+    public static String getMaximum(String str1, String str2, String str3) {
+        String max = str1;
+        if (str2.compareTo(str1) > 0 && str2.compareTo(str3) > 0) {
+            max = str2;
+        } else if (str3.compareTo(str1) > 0 && str3.compareTo(str2) > 0) {
+            max = str3;
         }
         return max;
     }
 
     public static void main(String[] args) {
         System.out.println("Welcome to Maximum Program Using Generics");
-        Float num1 = 10f, num2 = 15f, num3 = 12f;
-        System.out.println(getMaximum(num1, num2, num3));
+        String str1 = "Aa", str2 = "Bb", str3 = "Cc";
+        System.out.println(getMaximum(str1, str2, str3));
     }
 }
