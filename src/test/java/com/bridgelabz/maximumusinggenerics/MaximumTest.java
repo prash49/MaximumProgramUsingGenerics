@@ -1,20 +1,16 @@
 package com.bridgelabz.maximumusinggenerics;
 
-import static org.junit.Assert.assertTrue;
+import org.junit.Assert;
 
 import org.junit.Test;
 
 /**
  * Unit test for simple App.
  */
-public class MaximumTest
-{
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+public class MaximumTest {
+    public void given3Values_WhenGetMaximum_ShouldReturnCorrectValue() {
+        int actualResult = Maximum.getMaximum(10, 15, 12);
+        Assert.assertEquals(15, actualResult);
     }
+
 }
