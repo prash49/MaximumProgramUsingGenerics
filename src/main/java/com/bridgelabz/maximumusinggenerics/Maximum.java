@@ -1,8 +1,7 @@
 package com.bridgelabz.maximumusinggenerics;
 
 /**
- * Hello world!
- */
+ * Hello world!*/
 public class Maximum {
     public static String getMaximum(String str1, String str2, String str3) {
         String max = str1;
