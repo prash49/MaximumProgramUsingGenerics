@@ -13,7 +13,6 @@ public class Maximum {
         }
         return max;
     }
-
     public static void main(String[] args) {
         System.out.println("Welcome to Maximum Program Using Generics");
         Integer num1 = 10, num2 = 15, num3 = 12;
